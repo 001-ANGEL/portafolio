@@ -1,0 +1,51 @@
+
+@mixin about-me {
+    
+    #aboutMe     {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 31.25rem;
+
+        .aboutme-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 5%;
+
+            .aboutme-title {
+                width: 100%;
+                h2 {
+                    text-align: left;
+                    font-size: 3rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+            .aboutme-description {
+                width: 100%;
+                margin: 1rem 0;
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .aboutme-buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+            }
+        }
+
+        .aboutme-img {
+            width: 100%;
+            height: 100%;
+            //**clip-path -- Encontrar buena forma
+            clip-path: polygon(24% 10%, 69% 6%, 95% 39%, 100% 62%, 66% 89%, 17% 91%, 0 68%, 0 35%);
+            background-color: blue;
+            
+        }
+    }
+}

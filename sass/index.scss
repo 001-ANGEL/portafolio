@@ -1,0 +1,23 @@
+@import '../sass/structure/header';
+@import '../sass/structure/main';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+header {
+    @include header-style;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    @include styles-main;
+}

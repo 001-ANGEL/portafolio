@@ -1,0 +1,21 @@
+@import './main/hero';
+@import './main/aboutme';
+@import './main/experience';
+@import './main/projects';
+
+
+@mixin styles-main {
+    width: 1000px;
+
+//**Section Hero
+    @include hero;
+
+//**Section AboutMe
+    @include about-me;
+
+//**Section Experience
+    @include experience;
+
+//**Section Projects
+    @include projects;
+}

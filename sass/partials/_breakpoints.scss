@@ -1,0 +1,40 @@
+//Importaciones
+
+//todo: Responsive de la web
+
+@mixin display-tiny {
+    @media only screen and (min-width: 320px) and (max-width: 369px) {
+        @content;
+
+     }   
+}
+
+//Para dispositivos con la pantalla pequeña
+@mixin display-small-exception2 {
+    @media only screen and (min-width: 370px) and (max-width: 480px) {
+        @content;
+     }   
+}
+
+
+//Para dispositivos con la pantalla mediana
+@mixin display-medium {
+    @media only screen and (min-width: 481px) and (max-width: 768px){
+        @content;
+     }   
+}
+
+//Para dispositivos tablet
+@mixin display-tablet {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        @content;
+     }   
+}
+
+
+ //Para dispositivos de escritorio
+@mixin display-desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
+     }   
+}
