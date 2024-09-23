@@ -2,6 +2,9 @@
 @import './main/aboutme';
 @import './main/experience';
 @import './main/projects';
+@import './main/skills';
+@import './main/contactme';
+
 
 
 @mixin styles-main {
@@ -18,4 +21,10 @@
 
 //**Section Projects
     @include projects;
+
+//**Section Skills
+    @include skills;
+
+//**Section ContacMe
+    @include contacme;
 }

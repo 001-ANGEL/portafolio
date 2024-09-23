@@ -1,0 +1,36 @@
+
+
+@mixin skills {
+    #skills {
+        margin: 2rem 0;
+        padding-top: 5rem;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .box-content {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+
+            .box {
+                background-color: #fff;
+                width: 10rem;
+                height: 10rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                padding: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+
+    
+}
