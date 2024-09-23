@@ -3,34 +3,34 @@ const container = document.querySelector("#projects-container");
 
 let projects = [
   {
-    img: "images/imagen1.jpg",
-    title: "Titulo del Proyecto",
-    description: "descripcion",
-    link: "https://google.com",
+    img: "images/proyecto-2.webp",
+    title: "E-commerce",
+    description: " Desarrollé una interfaz para una tienda en línea que permite a los usuarios explorar una variedad de productos.",
+    // link: "https://google.com",
   },
   {
-    img: "images/imagen1.jpg",
-    title: "Titulo del Proyecto",
-    description: "descripcion",
-    link: "https://google.com",
+    img: "images/proyecto-1.webp",
+    title: "Simulador de E-mails",
+    description: " Interfaz de simulador de correo electrónico que permite a los usuarios enviar, junto con sus validaciones.",
+    // link: "https://google.com",
   },
   {
-    img: "images/imagen1.jpg",
-    title: "Titulo del Proyecto",
-    description: "Consectetur non nulla nostrud adipisicing laboris velit laborum tempor aliqua exercitation. Adipisicing reprehenderit pariatur occaecat amet cupidatat duis fugiat sunt aute proident sit magna fugiat commodo. Irure elit tempor aliqua adipisicing duis do velit qui esse in. Duis voluptate fugiat in velit mollit est enim non pariatur ipsum officia. Reprehenderit reprehenderit cillum non ad cillum anim cupidatat sint ex amet anim ullamco.",
-    link: "https://google.com",
+    img: "images/proyecto-3.webp",
+    title: "Carrito de Compras",
+    description: " Interfaz de carrito de compras que permite a los usuarios seleccionar productos y gestionar su compra de manera sencilla.",
+    // link: "https://google.com",
   },
   {
-    img: "images/imagen1.jpg",
-    title: "Titulo del Proyecto",
-    description: "descripcion",
-    link: "https://google.com",
+    img: "images/proyecto-5.webp",
+    title: "Filtro de Autos",
+    description: "Interfaz para un filtro de autos que permite a los usuarios buscar y filtrar vehículos según diferentes criterios como marca, modelo, precio y año.",
+    // link: "https://google.com",
   },
   {
-    img: "images/imagen1.jpg",
-    title: "Titulo del Proyecto",
-    description: "descripcion",
-    link: "https://google.com",
+    img: "images/proyecto-4.webp",
+    title: "Pomodoro",
+    description: " Desarrollé una aplicación de temporizador Pomodoro que ayuda a los usuarios a gestionar su tiempo de trabajo y descanso de manera eficiente.",
+    // link: "https://google.com",
   },
 ];
 
@@ -42,7 +42,7 @@ projects.forEach((project) => {
 
   projectBox.innerHTML = `
     <div class="project-img">
-    <img src="${project.img}" alt="imagen de ${project.title}">
+    <img src="${project.img}" alt="proyecto de ${project.title}">
     </div>
     
     <div class="project-title">
@@ -53,9 +53,11 @@ projects.forEach((project) => {
         <p>${project.description}</p>
     </div>
 
-    <div class="project-button">
-        <a href="${project.link}">Ver Proyecto</a>
-    </div>`;
+  `;
+
+//   <div class="project-button">
+//   <a href="${project.link}">Ver Proyecto</a>
+// </div>
 
     container.appendChild(projectBox);
 });

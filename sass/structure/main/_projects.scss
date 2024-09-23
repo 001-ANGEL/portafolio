@@ -46,8 +46,8 @@
                 }
 
                 .project-description {
-                    min-height: 2rem;
-                    max-height: 2rem;
+                    min-height: 3rem;
+                    max-height: 3rem;
                     margin: 2px 10px;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -62,24 +62,24 @@
 
                 }
 
-                .project-button {
-                    margin: 15px 10px;
-                    a {
-                        text-decoration: none;
-                        background-color: #452b5e;
-                        color: white;
-                        border-radius: 5px;
-                        text-align: center;
-                        padding: 8px 12px;
-                        font-size: 12px;
+                // .project-button {
+                //     margin: 15px 10px;
+                //     a {
+                //         text-decoration: none;
+                //         background-color: #452b5e;
+                //         color: white;
+                //         border-radius: 5px;
+                //         text-align: center;
+                //         padding: 8px 12px;
+                //         font-size: 12px;
 
-                        &:hover {
-                            transition: .3s;
-                            background-color: $color-printipal;
+                //         &:hover {
+                //             transition: .3s;
+                //             background-color: $color-printipal;
 
-                        }
-                    }
-                }
+                //         }
+                //     }
+                // }
 
             &:hover {
                     transition: .4s;
