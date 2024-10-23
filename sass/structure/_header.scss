@@ -1,6 +1,7 @@
 @import '../partials/mixins';
 @import '../partials/variables';
 @import '../partials/breakpoints';
+@import '../structure/responsiveHeader/responsiveHeader';
 
 //Todo: Estilos del header
 
@@ -27,6 +28,9 @@
     }
 
     nav {
+        h2 {
+            display: none;
+        }
 
         ul {
             display: flex;
@@ -44,7 +48,7 @@
                     &:hover {
                         color: $color-printipal;
                     }
-                    
+
                 }
             }
         }
@@ -55,23 +59,5 @@
         display: none;
     }
 
-    @include display-tiny {
-        width: 100%;
-        height: 4rem;
-        padding: 0 5%;
-
-
-        h1 {
-            font-size: 1.5rem;
-        }
-
-        nav {
-            display: none;
-        }
-
-        #btnClose,
-        #btnOpen {
-            display: block;
-        }
-    }
+    @include responsive-tiny;
 }

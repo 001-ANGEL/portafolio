@@ -27,6 +27,20 @@ Botones de contacto: Fondo en Verde Menta (#4ce2a7) con texto en Gris Oscuro (#3
 Sección Hero: Texto principal en Azul Profundo (#50359e), fondo neutro en Gris Claro (#f1f1f1).
 
 */
+/*
+
+Color Principal: #a76ae5 (Lila Vibrante)
+Color Secundario: #50359e (Azul Profundo)
+Color de Acento: #f495ef (Rosa Suave)
+Color Neutro: #f1f1f1 (Gris Claro)
+Color de Contraste: #4ce2a7 (Verde Menta)
+Color de Texto: #333333 (Gris Oscuro)
+Ejemplo de aplicación:
+Header: Fondo en Lila Vibrante (#a76ae5) con texto en Gris Claro (#f1f1f1).
+Botones de contacto: Fondo en Verde Menta (#4ce2a7) con texto en Gris Oscuro (#333333).
+Sección Hero: Texto principal en Azul Profundo (#50359e), fondo neutro en Gris Claro (#f1f1f1).
+
+*/
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +67,9 @@ header h1 {
 header h1 span {
   color: #a76ae5;
 }
+header nav h2 {
+  display: none;
+}
 header nav ul {
   display: flex;
   gap: 1.5rem;
@@ -72,7 +89,7 @@ header #btnOpen,
 header #btnClose {
   display: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 369px) {
+@media only screen and (min-width: 320px) and (max-width: 400px) {
   header {
     width: 100%;
     height: 4rem;
@@ -81,12 +98,66 @@ header #btnClose {
   header h1 {
     font-size: 1.5rem;
   }
-  header nav {
-    display: none;
-  }
   header #btnClose,
   header #btnOpen {
     display: block;
+  }
+  header #btnOpen {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header nav {
+    opacity: 0;
+  }
+  header nav h2 {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .ul-visible {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1rem;
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+  header .ul-visible .menu {
+    padding: 0 5%;
+    margin: 1rem 0 1.5rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .ul-visible .menu #btnClose {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header .ul-visible ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 0 5%;
+  }
+  header .ul-visible ul li {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  header .ul-visible ul li a:hover {
+    color: black;
   }
 }
 

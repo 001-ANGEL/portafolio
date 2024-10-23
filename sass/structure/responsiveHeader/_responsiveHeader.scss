@@ -1,0 +1,14 @@
+@import '../../partials/breakpoints.scss';
+@import './mixin';
+
+@mixin responsive-tiny {
+    @include display-tiny {
+
+        @include responsive(1.5rem); // Llama al mixin con el tamaño deseado
+
+    }
+}
+
+
+
+
