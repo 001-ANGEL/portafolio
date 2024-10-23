@@ -1,6 +1,6 @@
 @import '../../partials/variables';
 
-@mixin responsive($h1size: 1.5rem) {
+@mixin responsive($h1size: 1.5rem, $asize: 1.1rem, $ulgap: 1rem, $h2size: 1.5rem ) {
     width: 100%;
     height: 4rem;
     padding: 0 5%;
@@ -26,6 +26,7 @@
 
         h2 {
             display: block;
+            font-size: $h2size;
         }
 
         ul {
@@ -41,7 +42,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         padding-top: 1rem;
         opacity: 1;
         transition: .3s ease-out;
@@ -66,7 +67,7 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: $ulgap;
             margin: 1rem 0;
             padding: 0 5%;
 
@@ -76,6 +77,7 @@
                 padding-bottom: 1rem;
 
                 a {
+                    font-size: $asize;
                     &:hover {
                         color: black;
                     }

@@ -89,7 +89,7 @@ header #btnOpen,
 header #btnClose {
   display: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 400px) {
+@media only screen and (min-width: 0px) and (max-width: 400px) {
   header {
     width: 100%;
     height: 4rem;
@@ -113,6 +113,7 @@ header #btnClose {
   }
   header nav h2 {
     display: block;
+    font-size: 1.5rem;
   }
   header nav ul {
     display: none;
@@ -124,7 +125,7 @@ header #btnClose {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     padding-top: 1rem;
     opacity: 1;
     transition: 0.3s ease-out;
@@ -155,6 +156,234 @@ header #btnClose {
     border-bottom: 1px solid #e5e5e5;
     text-align: left;
     padding-bottom: 1rem;
+  }
+  header .ul-visible ul li a {
+    font-size: 1.1rem;
+  }
+  header .ul-visible ul li a:hover {
+    color: black;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 480px) {
+  header {
+    width: 100%;
+    height: 4rem;
+    padding: 0 5%;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header #btnClose,
+  header #btnOpen {
+    display: block;
+  }
+  header #btnOpen {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header nav {
+    opacity: 0;
+  }
+  header nav h2 {
+    display: block;
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .ul-visible {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    padding-top: 1rem;
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+  header .ul-visible .menu {
+    padding: 0 5%;
+    margin: 1rem 0 1.5rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .ul-visible .menu #btnClose {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header .ul-visible ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 0 5%;
+  }
+  header .ul-visible ul li {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  header .ul-visible ul li a {
+    font-size: 1.2rem;
+  }
+  header .ul-visible ul li a:hover {
+    color: black;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 4rem;
+    padding: 0 5%;
+  }
+  header h1 {
+    font-size: 1.9rem;
+  }
+  header #btnClose,
+  header #btnOpen {
+    display: block;
+  }
+  header #btnOpen {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header nav {
+    opacity: 0;
+  }
+  header nav h2 {
+    display: block;
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .ul-visible {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    padding-top: 1rem;
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+  header .ul-visible .menu {
+    padding: 0 5%;
+    margin: 1rem 0 1.5rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .ul-visible .menu #btnClose {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header .ul-visible ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 1rem 0;
+    padding: 0 5%;
+  }
+  header .ul-visible ul li {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  header .ul-visible ul li a {
+    font-size: 1.3rem;
+  }
+  header .ul-visible ul li a:hover {
+    color: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    width: 100%;
+    height: 4rem;
+    padding: 0 5%;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header #btnClose,
+  header #btnOpen {
+    display: block;
+  }
+  header #btnOpen {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header nav {
+    opacity: 0;
+  }
+  header nav h2 {
+    display: block;
+    font-size: 2.2rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  header .ul-visible {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    padding-top: 1rem;
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+  header .ul-visible .menu {
+    padding: 0 5%;
+    margin: 1rem 0 1.5rem 0;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .ul-visible .menu #btnClose {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+  }
+  header .ul-visible ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin: 1rem 0;
+    padding: 0 5%;
+  }
+  header .ul-visible ul li {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  header .ul-visible ul li a {
+    font-size: 1.6rem;
   }
   header .ul-visible ul li a:hover {
     color: black;

@@ -1,7 +1,7 @@
 
 //Para dispositivos con pantalla muy pequena
 @mixin display-tiny {
-    @media only screen and (min-width: 320px) and (max-width: 400px) {
+    @media only screen and (min-width: 0px) and (max-width: 400px) {
         @content;
      }   
 }
