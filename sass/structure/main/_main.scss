@@ -1,9 +1,9 @@
-@import './main/hero';
-@import './main/aboutme';
-@import './main/experience';
-@import './main/projects';
-@import './main/skills';
-@import './main/contactme';
+@import './hero';
+@import './aboutme';
+@import './experience';
+@import './projects';
+@import './skills';
+@import './contactme';
 
 
 
@@ -27,4 +27,5 @@
 
 //**Section ContacMe
     @include contacme;
+
 }
