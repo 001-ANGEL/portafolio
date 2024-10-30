@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/41a8033687.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <link rel="shortcut icon" href="./images/logo_transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <title>Portafolio</title>
@@ -38,7 +41,7 @@
 
 
     <main>
-        <section id="hero">
+        <section id="hero" data-aos="zoom-out">
             <div class="hero-content">
                 <div class="hero-greet">
                     <p>Hola, soy</p>
@@ -47,27 +50,26 @@
                     <h2>ANGEL LOPEZ</h2>
                 </div>
                 <div class="hero-description">
-                    <p>Soy un desarrollador apasionado por las diferentes tecnologías. Me gusta crear soluciones
-                        eficientes y prácticas, siempre buscando aprender nuevas herramientas para llevar cada proyecto
+                    <p>Me gusta crear soluciones eficientes y prácticas, siempre buscando aprender nuevas herramientas para llevar cada proyecto
                         al siguiente nivel.</p>
                 </div>
                 <div class="hero-buttons">
                     <div class="buttons">
                         <a href="./cv/Cv - Angel Lopez.pdf" download="CV Angel Lopez.pdf" class="btn-primary">Descargar
                             CV <i class="fa-solid fa-download"></i></a>
-                        <a href="#aboutMe" class="btn-secundary">Contactar</a>
+                        <a href="#contact" class="btn-secundary">Contactar</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="aboutMe">
+        <section id="aboutMe" data-aos="fade-up">
             <div class="aboutme-content">
                 <div class="aboutme-title">
                     <h2>Sobre mí</h2>
                 </div>
                 <div class="aboutme-description">
-                    <p>Me llamo Angel, soy un estudiante de Computación que se ha estado desarrollando proyectos en
+                    <p>Me llamo Angel, soy un estudiante de Computación que se ha estado desarrollando con proyectos en
                         Front-end y Flutter. Siempre estoy en busca de nuevas oportunidades para expandir mis
                         conocimientos y perfeccionar mis habilidades.</p>
                 </div>
@@ -77,11 +79,11 @@
             </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" data-aos="fade-up">
             <h2>Experiencia</h2>
 
             <div class="box">
-                <div class="circle-box"></div>
+                <div class="circle-box" data-aos="fade-up"></div>
                 <h3>Prácticas en Agropecuaria Popoyan</h3>
                 <p>Actualmente estoy aprendiendo desarrollo móvil utilizando Dart y Flutter. Durante esta experiencia,
                     estoy participando en el diseño y desarrollo de la aplicación Agriconecta. Estoy adquiriendo
@@ -90,7 +92,7 @@
             </div>
 
             <div class="box">
-                <div class="circle-box"></div>
+                <div class="circle-box" data-aos="fade-up"></div>
                 <h3>Creación de Interfaces Web</h3>
                 <p>He trabajado en el desarrollo de interfaces web utilizando HTML, CSS y JavaScript. Mi enfoque ha sido
                     diseñar experiencias de usuario intuitivas y atractivas, implementando un diseño responsivo que se
@@ -101,7 +103,7 @@
             </div>
 
             <div class="box">
-                <div class="circle-box"></div>
+                <div class="circle-box" data-aos="fade-up"></div>
                 <h3>Colaboración en Proyectos de Desarrollo Web</h3>
                 <p>En varios proyectos colaborativos, trabajé con compañeros del colegio para desarrollar interfaces
                     utilizando HTML, CSS y JavaScript. Me centré en el diseño e implementación, asegurando que cada
@@ -110,7 +112,7 @@
             </div>
 
             <div class="box">
-                <div class="circle-box"></div>
+                <div class="circle-box" data-aos="fade-up"></div>
                 <h3>Aprendizaje a través de Cursos en Línea</h3>
                 <p>He estado ampliando mis conocimientos mediante cursos en diversas plataformas, explorando temas como
                     desarrollo web, programación y herramientas modernas. Esta formación me ha permitido adquirir nuevas
@@ -118,7 +120,7 @@
             </div>
 
             <div class="box">
-                <div class="circle-box"></div>
+                <div class="circle-box" data-aos="fade-up"></div>
                 <h3>Desarrollo de Proyectos Personales</h3>
                 <p>A lo largo de los años, he implementado mis conocimientos con las creaciones de diversos sitios web
                     por mi cuenta, aplicando mis conocimientos en HTML, CSS, SCSS y JavaScript. Estos proyectos no solo
@@ -130,16 +132,16 @@
 
         </section>
 
-        <section id="projects">
+        <section id="projects" data-aos="fade-up">
             <h2>Proyectos</h2>
             <div id="projects-container" class="projects-container"></div>
         </section>
 
-        <section id="skills">
+        <section id="skills" data-aos="fade-up">
             <h2>Tecnologías</h2>
             <div class="box-content">
 
-                <div class="box">
+                <div class="box" data-aos="zoom-in">
                     <img src="./images/skills/html.webp" alt="imagen de la respectiva tecnología">
                 </div>
 
@@ -167,7 +169,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="slide-up">
             <h2>Información de Contacto</h2>
             <p>Correo electrónico: <a href="mailto:angellopezixcayau@gmail.com">angellopezixcayau@gmail.com</a></p>
             <div class="button">

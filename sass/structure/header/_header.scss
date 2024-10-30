@@ -1,4 +1,3 @@
-
 @import './responsive/responsiveHeader';
 
 //Todo: Estilos del header
@@ -32,21 +31,23 @@
 
         ul {
             display: flex;
-            gap: 1.5rem;
+            gap: .5rem;
             list-style: none;
 
             li {
+
                 a {
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 500;
                     text-decoration: none;
-                    color: black;
                     cursor: pointer;
-
-                    &:hover {
-                        color: $color-printipal;
-                    }
-
+                    padding: .3rem .5rem;
+                    border-radius: 3px;
+                    color: #000;
+                }
+                .active {
+                    background-color: $color-printipal;
+                    color: #fff;
                 }
             }
         }

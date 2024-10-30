@@ -39,6 +39,10 @@ let projects = [
 projects.forEach((project) => {
   const projectBox = document.createElement("DIV");
   projectBox.classList.add("project");
+  projectBox.classList.add("project");
+
+  // Asigna el atributo data-aos al DIV
+  projectBox.setAttribute("data-aos", "zoom-in-up");
 
   projectBox.innerHTML = `
     <div class="project-img">
@@ -100,5 +104,27 @@ anchors.forEach(anchor => {
 });
 
 
+// Active para cada anchor
+const navLinks = document.querySelectorAll("nav ul li a");
+const section = document.querySelectorAll("section");
 
+// Función para actualizar la clase active
+function updateActiveLink() {
+    let index = section.length;
 
+    while (--index && window.scrollY + 50 < section[index].offsetTop) {}
+
+    navLinks.forEach((link) => link.classList.remove("active"));
+    navLinks[index].classList.add("active");
+}
+
+// Llama a la función en scroll y cuando carga la página
+window.addEventListener("scroll", updateActiveLink);
+window.addEventListener("load", updateActiveLink);
+
+//* Animaciones
+
+AOS.init({
+  duration: 1000, // Duración de la animación en milisegundos
+  once: true      // La animación ocurre solo una vez
+});

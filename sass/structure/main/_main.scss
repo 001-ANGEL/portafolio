@@ -6,7 +6,6 @@
 @import './contactme';
 
 
-
 @mixin styles-main {
     width: 1000px;
 
@@ -27,5 +26,4 @@
 
 //**Section ContacMe
     @include contacme;
-
 }

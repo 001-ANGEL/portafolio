@@ -1,0 +1,65 @@
+//* Hero
+@mixin section-hero($pt: 6rem, $greet-p: 2.2rem, $hero-titleH2: 3.5rem, $ls: .4rem, $lineH: 4.5rem, $descriptionP: 1.2rem, ) {
+    width: 100%;
+
+    #hero {
+        padding-top: $pt;
+
+        .hero-content {
+            padding: 0 5%;
+
+            .hero-greet {
+                p {
+                    font-size: $greet-p;
+                    font-weight: 700;
+                }
+            }
+
+            .hero-title {
+                text-align: start;
+                margin-top: 0rem;
+
+                h2 {
+                    font-size: $hero-titleH2;
+                    letter-spacing: $ls;
+                    font-weight: 900;
+                    line-height: $lineH;
+                }
+            }
+
+            .hero-description {
+                p {
+                    font-size: $descriptionP;
+                }
+            }
+
+            .hero-buttons {
+
+                // padding: 0 5% !important;
+                .buttons {
+                    display: flex;
+                    gap: 1rem;
+                    margin-top: -1rem;
+
+                    a {
+                        width: 50%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@mixin section-hero-tablet{
+    width: 100%;
+    #hero {
+        padding-top: 8rem;
+
+       .hero-content {
+        padding: 0 5%;
+
+       }
+    }
+}
