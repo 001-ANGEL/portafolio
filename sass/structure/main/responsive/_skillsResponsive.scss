@@ -1,0 +1,16 @@
+@import './mixin';
+@import '../../../partials/breakpoints';
+
+
+@mixin responsive-skills {
+
+    @include display-standar {
+        #skills {
+            .box-content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+}

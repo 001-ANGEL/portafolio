@@ -1,0 +1,21 @@
+@import './mixin';
+@import '../../../partials/breakpoints';
+
+@mixin responsive-aboutMe {
+    
+    @include display-tiny {
+        @include section-aboutme;
+    }
+
+    @include display-standar {
+        @include section-aboutme(5rem, 7rem, 1.5rem, 265px, 1);
+    }
+
+    @include display-medium {
+        @include section-aboutme(0rem, 0rem, 1.8rem, 100%, 2);
+    }
+
+    @include display-tablet {
+        @include section-aboutme(0rem, 0rem, 1.8rem, 100%, 2);
+    }
+}

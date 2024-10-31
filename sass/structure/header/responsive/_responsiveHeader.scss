@@ -2,11 +2,14 @@
 @import './mixin';
 
 @mixin responsive-display {
+
     @include display-tiny {
         @include responsive();
     }
 
-    @include display-small {
+
+
+    @include display-standar {
         @include responsive(1.8rem, 1.2rem, 1.5rem)
     }
 
@@ -18,7 +21,3 @@
         @include responsive(2.2rem, 1.6rem, 3.5rem, 2.2rem)
     }
 }
-
-
-
-

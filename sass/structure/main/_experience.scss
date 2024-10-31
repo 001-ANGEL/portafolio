@@ -1,3 +1,4 @@
+@import './responsive/experienceResponsive';
 
 @mixin experience {
 
@@ -39,5 +40,7 @@
             }
         }
     }
+
+    @include responsive-experience;
 
 }

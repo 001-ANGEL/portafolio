@@ -1,0 +1,13 @@
+@import './mixin';
+@import '../../../partials/breakpoints';
+
+@mixin responsive-experience {
+     @include display-standar {
+        #experience {
+
+            .box {
+                height: auto;
+            }
+        }
+     }
+}

@@ -1,12 +1,18 @@
 //* Hero
-@mixin section-hero($pt: 6rem, $greet-p: 2.2rem, $hero-titleH2: 3.5rem, $ls: .4rem, $lineH: 4.5rem, $descriptionP: 1.2rem, ) {
+@mixin section-hero($heroH: 40rem, $pt: 0rem, $greet-p: 2.2rem, $hero-titleH2: 3.5rem, $ls: .4rem, $lineH: 4.5rem, $descriptionP: 1.2rem, ) {
     width: 100%;
 
     #hero {
-        padding-top: $pt;
+        padding-top: $pt ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $heroH;
+
 
         .hero-content {
             padding: 0 5%;
+            height: 100%;
 
             .hero-greet {
                 p {
@@ -35,7 +41,6 @@
 
             .hero-buttons {
 
-                // padding: 0 5% !important;
                 .buttons {
                     display: flex;
                     gap: 1rem;
@@ -52,14 +57,48 @@
     }
 }
 
-@mixin section-hero-tablet{
+@mixin section-hero-tablet {
     width: 100%;
+
     #hero {
         padding-top: 8rem;
 
-       .hero-content {
-        padding: 0 5%;
+        .hero-content {
+            padding: 0 5%;
+        }
+    }
+}
 
-       }
+//*Sobre mi
+@mixin section-aboutme($padding: 0rem, $mt: 0rem, $f-size: 1.2rem, $img-size: 225px, $grid: 1) {
+    #aboutMe {
+        width: 100%;
+        height: auto;
+        padding: $padding 5% 0;
+        margin-top: $mt;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat($grid, 1fr);
+
+        .aboutme-content {
+            height: auto;
+
+            .aboutme-title {
+                margin-bottom: .5rem;
+            }
+
+            .aboutme-description {
+                p {
+                    font-size: $f-size;
+                    color: #555;
+                }
+            }
+        }
+
+        .aboutme-img {
+            height: $img-size;
+            padding-bottom: 1rem;
+        }
+
     }
 }
