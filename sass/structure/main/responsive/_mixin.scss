@@ -102,3 +102,24 @@
 
     }
 }
+
+//*Experience
+@mixin section-experience($margin: 2.5rem, $h2Size: 2.5rem, $pl: 1.5rem) {
+    #experience {
+        padding: 0 5%;
+        width: 100%;
+        margin: $margin 0;
+        h2 {
+            font-size:$h2Size;
+        }
+        .box {
+            height: auto;
+            padding-left: $pl;
+            margin: 1.5rem 0;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

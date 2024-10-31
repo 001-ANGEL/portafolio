@@ -2,12 +2,19 @@
 @import '../../../partials/breakpoints';
 
 @mixin responsive-experience {
-     @include display-standar {
-        #experience {
-
-            .box {
-                height: auto;
-            }
-        }
+     @include display-tiny {
+       @include section-experience;
      }
+
+     @include display-standar {
+        @include section-experience;
+      }
+
+      @include display-medium {
+        @include section-experience;
+      }
+
+      @include display-tablet {
+        @include section-experience;
+      }
 }
