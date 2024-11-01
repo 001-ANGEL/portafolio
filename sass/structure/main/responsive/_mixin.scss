@@ -123,3 +123,33 @@
         }
     }
 }
+
+//* Projects
+@mixin section-projects($gridCol: 1, $gap: 1rem, $paddingA: 7px 15px) {
+    #projects {
+        padding: 5rem 5% 0;
+        width: 100%;
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat($gridCol, 1fr);
+            gap: $gap;
+
+            .project {
+
+
+                .project-button {
+                    a {
+                        padding: $paddingA;
+                    }
+                }
+
+                &:hover {
+                    transform: none;
+                    box-shadow: none;
+                    transition: none;
+                }
+            }
+        }
+    }
+}

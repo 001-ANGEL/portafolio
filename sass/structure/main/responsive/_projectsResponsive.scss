@@ -1,0 +1,22 @@
+@import './mixin';
+@import '../../../partials/breakpoints';
+
+
+@mixin responsive-projects {
+
+    @include display-tiny {
+        @include section-projects;
+    }
+
+    @include display-standar {
+        @include section-projects;
+    }
+
+    @include display-medium {
+        @include section-projects;
+    }
+
+    @include display-tablet {
+        @include section-projects(2, 2rem, 9px 20px);
+    }
+}

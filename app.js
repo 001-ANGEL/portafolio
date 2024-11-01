@@ -56,12 +56,12 @@ projects.forEach((project) => {
     <div class="project-description">
         <p>${project.description}</p>
     </div>
-
+    
+     <div class="project-button">
+     <a href="${project.link}">Ver Proyecto</a>
+   </div>
   `;
 
-//   <div class="project-button">
-//   <a href="${project.link}">Ver Proyecto</a>
-// </div>
 
     container.appendChild(projectBox);
 });
