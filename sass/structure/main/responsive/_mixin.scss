@@ -70,7 +70,7 @@
 }
 
 //*Sobre mi
-@mixin section-aboutme($padding: 0rem, $mt: 0rem, $f-size: 1.2rem, $img-size: 225px, $grid: 1) {
+@mixin section-aboutme($padding: 0rem, $mt: 0rem, $f-size: 1.1rem, $img-size: 225px, $grid: 1) {
     #aboutMe {
         width: 100%;
         height: auto;
@@ -106,7 +106,7 @@
 //*Experience
 @mixin section-experience($margin: 2.5rem, $h2Size: 2.5rem, $pl: 1.5rem) {
     #experience {
-        padding: 0 5%;
+        padding: 5rem 5% 0;
         width: 100%;
         margin: $margin 0;
         h2 {
@@ -150,6 +150,49 @@
                     transition: none;
                 }
             }
+        }
+    }
+}
+
+//* Skills
+@mixin section-skills($width: 5rem, $height: 5rem) {
+    #skills {
+        width: 100%;
+        padding: 5rem 5%;
+        .box-content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .box {
+                width: $width;
+                height: $height;
+                padding: .7rem;
+            }
+        }
+    }
+}
+
+//* Contacme
+@mixin section-contact($display: grid, $gridCol: 1) {
+    #contact {
+        padding: 5rem 5% ;
+        padding-right: 5%;
+        width: 100%;
+        margin-bottom: 2rem;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat($gridCol, 1fr);
+
+        .img-bg {
+            display: $display;
+            
+            img {
+                display: $display;
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
         }
     }
 }

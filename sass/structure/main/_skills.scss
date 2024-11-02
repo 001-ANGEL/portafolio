@@ -11,16 +11,17 @@
         }
 
         .box-content {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
 
             .box {
                 background-color: #fff;
-                width: 10rem;
-                height: 10rem;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                width: 7rem;
+                height: 7rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
                 padding: 1rem;
+                border-radius: 15px;
 
                 img {
                     width: 100%;
@@ -31,6 +32,7 @@
 
         }
     }
+
     @include responsive-skills;
-    
+
 }

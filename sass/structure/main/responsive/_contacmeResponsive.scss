@@ -1,23 +1,20 @@
 @import './mixin';
 @import '../../../partials/breakpoints';
 
-
-@mixin responsive-skills {
-
+@mixin responsive-contact {
     @include display-tiny {
-        @include section-skills;
+        @include section-contact(none);
     }
 
     @include display-standar {
-        @include section-skills;
+        @include section-contact(none);
     }
 
     @include display-medium {
-        @include section-skills;
+        @include section-contact(none, 2);
     }
 
     @include display-tablet {
-        @include section-skills(7rem, 7rem);
+        @include section-contact(grid, 2);
     }
-
 }

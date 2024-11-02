@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/41a8033687.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/form.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
-    <link rel="shortcut icon" href="./images/logo_transparent.png" type="image/x-icon">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('g3TKKp64fWjoDTk-J')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <title>Portafolio</title>
 </head>
@@ -79,7 +84,7 @@
                 </div>
             </div>
             <div class="aboutme-img">
-                <img src="./images/aboutmes.png" alt="Imagen personal para la sección de 'Sobre Mí'">
+                <img src="./images/aboutmes.webp" alt="Imagen personal para la sección de 'Sobre Mí'">
             </div>
         </section>
 
@@ -169,18 +174,40 @@
                     <img src="./images/skills/Flutter-Icon.webp" alt="imagen de la respectiva tecnología">
                 </div>
 
+                <div class="box">
+                    <img src="./images/skills/js.webp" alt="imagen de la respectiva tecnología">
+                </div>
+
+                <div class="box">
+                    <img src="./images/skills/dart.webp" alt="imagen de la respectiva tecnología">
+                </div>
+
 
             </div>
         </section>
 
         <section id="contact" data-aos="slide-up">
-            <h2>Información de Contacto</h2>
-            <p>Correo electrónico: <a href="mailto:angellopezixcayau@gmail.com">angellopezixcayau@gmail.com</a></p>
-            <div class="button">
-                <p>Descarga mi cv: <a href="./cv/Cv - Angel Lopez.pdf" download="Cv Angel Lopez"
-                        class="btn-primary">Descargar CV <i class="fa-solid fa-download"></i></a></p>
+            <form id="form">
+                <h2>Contáctame</h2>
+                <div class="field">
+                  <label for="from_name">Nombre</label>
+                  <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                  <label for="message">Mensaje</label>
+                  <input type="text" name="message" id="message">
+                </div>
+                <div class="field">
+                  <label for="emai_id">Email</label>
+                  <input type="text" name="emai_id" id="emai_id">
+                </div>
+                <div class="field-alert"></div>
+              
+                <input type="submit" id="button" value="Enviar Email">
+              </form>
+              <div class="img-bg">
+                <img src="./images/imgbg.webp" alt="Imagen de un paisaje animado">
             </div>
-            <p>Teléfono: +502 4144 4835</p>
         </section>
 
     </main>

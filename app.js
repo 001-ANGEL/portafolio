@@ -128,3 +128,83 @@ AOS.init({
   duration: 1000, // Duración de la animación en milisegundos
   once: true      // La animación ocurre solo una vez
 });
+
+
+//* Funcionamiento del formulario
+const btn = document.getElementById("button");
+
+const userName = document.querySelector("#from_name");
+const message = document.querySelector("#message");
+const emailID = document.querySelector("#emai_id");
+
+const form = document.querySelector("#form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (userName.value === "" || message.value === "" || emailID.value === "") {
+    showAlert("Todos los campos son obligatorios");
+  } else {
+    if (!validateEmail(emailID.value)) {
+      showAlert("Ingrese un Email válido");
+    } else {
+      btn.value = "Enviando...";
+
+      const serviceID = "default_service";
+      const templateID = "template_ycfp17d";
+
+      emailjs.sendForm(serviceID, templateID, form).then(
+        () => {
+          btn.value = "Enviar Email";
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Enviado Correctamente!",
+            showConfirmButton: false,
+            timer: 1000
+          });
+          setTimeout(() => {
+            location.href = '#hero';
+
+            setTimeout(() => {
+              location.reload()
+            }, 1000);
+          }, 2000);
+          
+        },
+        (err) => {
+          btn.value = "Enviar Email";
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "Enviado Correctamente!",
+            showConfirmButton: false,
+            timer: 1000
+          });
+          console.log(err);
+        }
+      );
+    }
+  }
+});
+
+function showAlert(message) {
+  const existsAlert = document.querySelector(".alert-p");
+  if (!existsAlert) {
+    const field = document.querySelector(".field-alert");
+    const alert = document.createElement("P");
+    alert.classList.add("alert-p");
+    alert.textContent = message;
+
+    field.appendChild(alert);
+
+    setTimeout(() => {
+      alert.remove();
+    }, 3000);
+  }
+}
+
+function validateEmail(emailID) {
+  const regex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+  return regex.test(emailID);
+}
