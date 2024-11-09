@@ -903,6 +903,9 @@ main #projects .projects-container .project .project-description p {
 }
 main #projects .projects-container .project .project-button {
   margin: 5px 10px;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
 }
 main #projects .projects-container .project .project-button a {
   background-color: #a76ae5;
@@ -923,6 +926,13 @@ main #projects .projects-container .project .project-button a:hover {
   transition: 0.3s;
   background-color: #de50c6;
 }
+main #projects .projects-container .project .project-button .github-icon {
+  background-color: #3c2353;
+}
+main #projects .projects-container .project .project-button .github-icon:hover {
+  transition: 0.3s;
+  background-color: #333;
+}
 main #projects .projects-container .project:hover {
   transition: 0.3s;
   transform: translateY(-5px);
@@ -937,6 +947,9 @@ main #projects .projects-container .project:hover {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+  }
+  main #projects .projects-container .project {
+    height: auto;
   }
   main #projects .projects-container .project .project-button a {
     padding: 7px 15px;
@@ -957,6 +970,9 @@ main #projects .projects-container .project:hover {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
+  main #projects .projects-container .project {
+    height: auto;
+  }
   main #projects .projects-container .project .project-button a {
     padding: 7px 15px;
   }
@@ -976,6 +992,9 @@ main #projects .projects-container .project:hover {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
   }
+  main #projects .projects-container .project {
+    height: auto;
+  }
   main #projects .projects-container .project .project-button a {
     padding: 7px 15px;
   }
@@ -994,6 +1013,9 @@ main #projects .projects-container .project:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  main #projects .projects-container .project {
+    height: auto;
   }
   main #projects .projects-container .project .project-button a {
     padding: 9px 20px;

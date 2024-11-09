@@ -71,7 +71,10 @@
 
                 .project-button {
                     margin: 5px 10px;
-
+                    display: flex;
+                    gap: 1rem;
+                    width: 100%;
+                    // background-color: red;
                     a {
                         background-color: $color-printipal;
                         color: #ffffff;
@@ -90,6 +93,15 @@
                         &:hover {
                             transition: .3s;
                             background-color: #de50c6;
+
+                        }
+                    }
+                    .github-icon {
+                        background-color: #3c2353;
+
+                        &:hover {
+                            transition: .3s;
+                            background-color: #333;
 
                         }
                     }
