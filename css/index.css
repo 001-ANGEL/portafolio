@@ -1,32 +1,5 @@
 @charset "UTF-8";
-/*
 
-Color Principal: #a76ae5 (Lila Vibrante)
-Color Secundario: #50359e (Azul Profundo)
-Color de Acento: #f495ef (Rosa Suave)
-Color Neutro: #f1f1f1 (Gris Claro)
-Color de Contraste: #4ce2a7 (Verde Menta)
-Color de Texto: #333333 (Gris Oscuro)
-Ejemplo de aplicación:
-Header: Fondo en Lila Vibrante (#a76ae5) con texto en Gris Claro (#f1f1f1).
-Botones de contacto: Fondo en Verde Menta (#4ce2a7) con texto en Gris Oscuro (#333333).
-Sección Hero: Texto principal en Azul Profundo (#50359e), fondo neutro en Gris Claro (#f1f1f1).
-
-*/
-/*
-
-Color Principal: #a76ae5 (Lila Vibrante)
-Color Secundario: #50359e (Azul Profundo)
-Color de Acento: #f495ef (Rosa Suave)
-Color Neutro: #f1f1f1 (Gris Claro)
-Color de Contraste: #4ce2a7 (Verde Menta)
-Color de Texto: #333333 (Gris Oscuro)
-Ejemplo de aplicación:
-Header: Fondo en Lila Vibrante (#a76ae5) con texto en Gris Claro (#f1f1f1).
-Botones de contacto: Fondo en Verde Menta (#4ce2a7) con texto en Gris Oscuro (#333333).
-Sección Hero: Texto principal en Azul Profundo (#50359e), fondo neutro en Gris Claro (#f1f1f1).
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -629,6 +602,7 @@ main #aboutMe .aboutme-content .aboutme-description {
 }
 main #aboutMe .aboutme-content .aboutme-description p {
   font-size: 1.5rem;
+  color: #333;
 }
 main #aboutMe .aboutme-img {
   width: 100%;
