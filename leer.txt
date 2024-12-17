@@ -1,7 +1,0 @@
-mejorar la ui de la experiencia, no solo usar  blanco en las cards 
-
-agregar intersection observer para las animaciones de las secciones
-
-scroll-padding-top: es del scroll-behavior
-
-Agregar efectos de letras, el spin kit que esta en la web de clima
