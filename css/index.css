@@ -1011,7 +1011,7 @@ main #skills h2 {
 main #skills .box-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem 1.5rem;
 }
 main #skills .box-content .box {
   background-color: #fff;
